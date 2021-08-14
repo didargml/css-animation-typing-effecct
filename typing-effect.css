@@ -1,0 +1,45 @@
+
+h1{
+
+    animation: typing 2s steps(17), blink 0.5s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 16ch;
+    border-right: 5px solid white;
+    /* font-family: monospace; */
+}
+
+@keyframes typing{
+
+    from{
+
+        width: 0;
+    }
+
+
+}
+
+@keyframes blink{
+
+    50%{
+        border-color: transparent;
+    }
+}
+
+.fadeIn{
+    animation: fadeIn 5s;
+    animation-fill-mode: both;
+}
+
+.wait-2s{
+    animation-delay: 2s;
+}
+
+.wait-3s{
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
